@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/mujtabaabas" target="_blank">
-    <img src="https://img.shields.io/github/followers/mujtabaabas?label=Follow&style=social" alt="GitHub followers" />
+    <img src="https://img.shields.io/github/followers/syed-mujtaba-stack?label=Follow&style=social" alt="GitHub followers" />
   </a>
 </p>
 
