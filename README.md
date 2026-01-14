@@ -331,3 +331,32 @@ Works for any element type! 🎯
 - Improved code comments and readability
 
 ---
+
+
+<!-- 🤖 Auto-Updated Example on 2026-01-14 -->
+## 💻 Code Example
+
+# React Component Pattern
+
+```jsx
+// Reusable button component
+const Button = ({ children, onClick, variant = 'primary' }) => {
+  const baseClasses = 'px-4 py-2 rounded font-medium transition-colors';
+  const variantClasses = variant === 'primary' 
+    ? 'bg-blue-600 hover:bg-blue-700 text-white' 
+    : 'bg-gray-200 hover:bg-gray-300 text-gray-800';
+  
+  return (
+    <button 
+      className={`${baseClasses} ${variantClasses}`}
+      onClick={onClick}
+    >
+      {children}
+    </button>
+  );
+};
+```
+
+Clean and reusable! ♻️
+
+---
