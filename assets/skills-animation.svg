@@ -1,0 +1,62 @@
+<svg width="800" height="150" viewBox="0 0 800 150" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes slideIn { 0% { transform: translateX(-100px); opacity: 0; } 100% { transform: translateX(0); opacity: 1; } }
+    @keyframes glow { 0%, 100% { filter: brightness(1); } 50% { filter: brightness(1.3); } }
+    @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+    .skill-bar { animation: slideIn 1s ease-out forwards; }
+    .skill1 { animation-delay: 0.2s; }
+    .skill2 { animation-delay: 0.4s; }
+    .skill3 { animation-delay: 0.6s; }
+    .skill4 { animation-delay: 0.8s; }
+    .skill5 { animation-delay: 1s; }
+    .glowing { animation: glow 2s ease-in-out infinite; }
+    .bouncing { animation: bounce 2s ease-in-out infinite; }
+  </style>
+  <defs>
+    <linearGradient id="skillGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#60A5FA;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="skillGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A78BFA;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="skillGradient3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34D399;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="skillGradient4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FCD34D;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="skillGradient5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#EF4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DC2626;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Skill Bars -->
+  <rect x="50" y="30" width="120" height="20" rx="10" fill="url(#skillGradient1)" class="skill-bar skill1"/>
+  <text x="110" y="45" text-anchor="middle" fill="white" font-family="monospace" font-size="12" font-weight="bold">Frontend</text>
+  
+  <rect x="200" y="60" width="120" height="20" rx="10" fill="url(#skillGradient2)" class="skill-bar skill2"/>
+  <text x="260" y="75" text-anchor="middle" fill="white" font-family="monospace" font-size="12" font-weight="bold">Backend</text>
+  
+  <rect x="350" y="30" width="120" height="20" rx="10" fill="url(#skillGradient3)" class="skill-bar skill3"/>
+  <text x="410" y="45" text-anchor="middle" fill="white" font-family="monospace" font-size="12" font-weight="bold">Database</text>
+  
+  <rect x="500" y="60" width="120" height="20" rx="10" fill="url(#skillGradient4)" class="skill-bar skill4"/>
+  <text x="560" y="75" text-anchor="middle" fill="white" font-family="monospace" font-size="12" font-weight="bold">DevOps</text>
+  
+  <rect x="650" y="30" width="120" height="20" rx="10" fill="url(#skillGradient5)" class="skill-bar skill5"/>
+  <text x="710" y="45" text-anchor="middle" fill="white" font-family="monospace" font-size="12" font-weight="bold">AI/ML</text>
+  
+  <!-- Decorative Elements -->
+  <circle cx="30" cy="40" r="3" fill="#3B82F6" class="bouncing"/>
+  <circle cx="180" cy="70" r="3" fill="#8B5CF6" class="bouncing"/>
+  <circle cx="330" cy="40" r="3" fill="#10B981" class="bouncing"/>
+  <circle cx="480" cy="70" r="3" fill="#F59E0B" class="bouncing"/>
+  <circle cx="630" cy="40" r="3" fill="#EF4444" class="bouncing"/>
+  
+  <text x="400" y="120" text-anchor="middle" fill="#6B7280" font-family="monospace" font-size="14" font-weight="bold" class="glowing">Technical Expertise</text>
+</svg>

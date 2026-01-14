@@ -1,0 +1,46 @@
+<svg width="800" height="120" viewBox="0 0 800 120" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+    @keyframes rotate { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    @keyframes pulse { 0%, 100% { opacity: 0.6; transform: scale(1); } 50% { opacity: 1; transform: scale(1.1); } }
+    .tech-icon { animation: float 3s ease-in-out infinite; }
+    .icon1 { animation-delay: 0s; }
+    .icon2 { animation-delay: 0.5s; }
+    .icon3 { animation-delay: 1s; }
+    .icon4 { animation-delay: 1.5s; }
+    .icon5 { animation-delay: 2s; }
+    .rotating { animation: rotate 4s linear infinite; }
+    .pulsing { animation: pulse 2s ease-in-out infinite; }
+  </style>
+  <defs>
+    <linearGradient id="techGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EC4899;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Tech Icons -->
+  <circle cx="100" cy="60" r="25" fill="#3B82F6" opacity="0.2" class="tech-icon icon1"/>
+  <text x="100" y="65" text-anchor="middle" fill="#3B82F6" font-family="monospace" font-size="12" font-weight="bold">JS</text>
+  
+  <circle cx="250" cy="60" r="25" fill="#8B5CF6" opacity="0.2" class="tech-icon icon2"/>
+  <text x="250" y="65" text-anchor="middle" fill="#8B5CF6" font-family="monospace" font-size="12" font-weight="bold">React</text>
+  
+  <circle cx="400" cy="60" r="25" fill="#10B981" opacity="0.2" class="tech-icon icon3"/>
+  <text x="400" y="65" text-anchor="middle" fill="#10B981" font-family="monospace" font-size="12" font-weight="bold">Node</text>
+  
+  <circle cx="550" cy="60" r="25" fill="#F59E0B" opacity="0.2" class="tech-icon icon4"/>
+  <text x="550" y="65" text-anchor="middle" fill="#F59E0B" font-family="monospace" font-size="12" font-weight="bold">AI</text>
+  
+  <circle cx="700" cy="60" r="25" fill="#EF4444" opacity="0.2" class="tech-icon icon5"/>
+  <text x="700" y="65" text-anchor="middle" fill="#EF4444" font-family="monospace" font-size="12" font-weight="bold">Cloud</text>
+  
+  <!-- Connecting Lines -->
+  <path d="M125 60 Q175 40 225 60" stroke="url(#techGradient)" stroke-width="2" fill="none" class="pulsing"/>
+  <path d="M275 60 Q325 40 375 60" stroke="url(#techGradient)" stroke-width="2" fill="none" class="pulsing"/>
+  <path d="M425 60 Q475 40 525 60" stroke="url(#techGradient)" stroke-width="2" fill="none" class="pulsing"/>
+  <path d="M575 60 Q625 40 675 60" stroke="url(#techGradient)" stroke-width="2" fill="none" class="pulsing"/>
+  
+  <text x="400" y="100" text-anchor="middle" fill="#6B7280" font-family="monospace" font-size="10">Full-Stack Tech Stack</text>
+</svg>

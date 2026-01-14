@@ -1,0 +1,41 @@
+<svg width="400" height="80" viewBox="0 0 400 80" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    @keyframes fade { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
+    @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+    .spinner { animation: spin 2s linear infinite; }
+    .dot { animation: fade 1.5s ease-in-out infinite; }
+    .dot1 { animation-delay: 0s; }
+    .dot2 { animation-delay: 0.3s; }
+    .dot3 { animation-delay: 0.6s; }
+    .dot4 { animation-delay: 0.9s; }
+    .dot5 { animation-delay: 1.2s; }
+    .bouncing { animation: bounce 1s ease-in-out infinite; }
+  </style>
+  <defs>
+    <linearGradient id="loadingGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EC4899;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Loading Spinner -->
+  <g transform="translate(200, 40)">
+    <circle cx="0" cy="0" r="15" fill="none" stroke="url(#loadingGradient)" stroke-width="3" class="spinner"/>
+    <circle cx="0" cy="0" r="3" fill="#3B82F6"/>
+  </g>
+  
+  <!-- Loading Dots -->
+  <circle cx="80" cy="40" r="4" fill="#3B82F6" class="dot dot1"/>
+  <circle cx="100" cy="40" r="4" fill="#8B5CF6" class="dot dot2"/>
+  <circle cx="120" cy="40" r="4" fill="#10B981" class="dot dot3"/>
+  <circle cx="140" cy="40" r="4" fill="#F59E0B" class="dot dot4"/>
+  <circle cx="160" cy="40" r="4" fill="#EF4444" class="dot dot5"/>
+  
+  <!-- Progress Bar -->
+  <rect x="50" y="60" width="300" height="8" rx="4" fill="#E5E7EB"/>
+  <rect x="50" y="60" width="180" height="8" rx="4" fill="url(#loadingGradient)" class="bouncing"/>
+  
+  <text x="200" y="75" text-anchor="middle" fill="#6B7280" font-family="monospace" font-size="10">Loading Awesome Content...</text>
+</svg>

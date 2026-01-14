@@ -18,8 +18,8 @@
 I'm a passionate **Full-Stack Developer** and **AI Engineer** with expertise in building modern web applications and integrating cutting-edge AI technologies. I love creating beautiful, performant, and scalable solutions that solve real-world problems.
 
 <div align="center">
-  <!-- Custom Animated Code Snake SVG -->
-  <img src="assets/code-snake.svg" alt="Code Snake Animation" width="800" height="200" />
+  <!-- Enhanced Snake Animation SVG -->
+  <img src="assets/enhanced-snake.svg" alt="Enhanced Snake Animation" width="900" height="250" />
 </div>
 
 ---
@@ -77,7 +77,27 @@ I'm a passionate **Full-Stack Developer** and **AI Engineer** with expertise in 
 
 ---
 
+## 🎯 Tech Stack Animation
+
+<div align="center">
+  <img src="assets/tech-stack.svg" alt="Tech Stack Animation" width="800" height="120" />
+</div>
+
+---
+
+## 💻 Skills Visualization
+
+<div align="center">
+  <img src="assets/skills-animation.svg" alt="Skills Animation" width="800" height="150" />
+</div>
+
+---
+
 ## 📊 GitHub Analytics
+
+<div align="center">
+  <img src="assets/loading-animation.svg" alt="Loading Animation" width="400" height="80" />
+</div>
 
 **🔗 GitHub Stats:** [View Stats](https://github-readme-stats.vercel.app/api?username=syed-mujtaba-stack&show_icons=true&theme=radical)
 
@@ -99,7 +119,11 @@ I'm a passionate **Full-Stack Developer** and **AI Engineer** with expertise in 
 
 ---
 
-## Connect With Me
+## 🌐 Connect With Me
+
+<div align="center">
+  <img src="assets/social-links.svg" alt="Social Links Animation" width="600" height="100" />
+</div>
 
 <div align="center">
   

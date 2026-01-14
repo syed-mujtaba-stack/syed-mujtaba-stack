@@ -1,0 +1,91 @@
+<svg width="900" height="250" viewBox="0 0 900 250" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes slither { 0% { transform: translateX(0); } 100% { transform: translateX(-150px); } }
+    @keyframes glow { 0%, 100% { opacity: 0.4; filter: brightness(1); } 50% { opacity: 1; filter: brightness(1.5); } }
+    @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }
+    @keyframes eyeBlink { 0%, 90%, 100% { opacity: 1; } 95% { opacity: 0; } }
+    @keyframes tongueFlick { 0%, 100% { transform: scaleY(1); } 50% { transform: scaleY(0.8); } }
+    .snake-body { animation: slither 8s linear infinite; }
+    .scale1 { animation-delay: 0s; }
+    .scale2 { animation-delay: 1s; }
+    .scale3 { animation-delay: 2s; }
+    .scale4 { animation-delay: 3s; }
+    .scale5 { animation-delay: 4s; }
+    .glowing { animation: glow 2s ease-in-out infinite; }
+    .pulsing { animation: pulse 3s ease-in-out infinite; }
+    .blinking { animation: eyeBlink 3s ease-in-out infinite; }
+    .flicking { animation: tongueFlick 2s ease-in-out infinite; }
+  </style>
+  <defs>
+    <linearGradient id="snakeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#A855F7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EC4899;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="eyeGradient">
+      <stop offset="0%" style="stop-color:#EF4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DC2626;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Snake Body Segments -->
+  <g class="snake-body">
+    <!-- Head -->
+    <ellipse cx="150" cy="50" rx="25" ry="20" fill="url(#snakeGradient)" class="scale1"/>
+    <circle cx="135" cy="45" r="4" fill="url(#eyeGradient)" class="blinking"/>
+    <circle cx="165" cy="45" r="4" fill="url(#eyeGradient)" class="blinking"/>
+    <path d="M140 55 Q150 60 160 55" stroke="#DC2626" stroke-width="2" fill="none" class="flicking"/>
+    
+    <!-- Body Segment 1 -->
+    <ellipse cx="200" cy="70" rx="22" ry="18" fill="url(#snakeGradient)" class="scale2"/>
+    <circle cx="190" cy="65" r="3" fill="#3B82F6" class="pulsing"/>
+    <circle cx="210" cy="65" r="3" fill="#3B82F6" class="pulsing"/>
+    
+    <!-- Body Segment 2 -->
+    <ellipse cx="250" cy="60" rx="20" ry="16" fill="url(#snakeGradient)" class="scale3"/>
+    <circle cx="240" cy="55" r="2.5" fill="#8B5CF6" class="pulsing"/>
+    <circle cx="260" cy="55" r="2.5" fill="#8B5CF6" class="pulsing"/>
+    
+    <!-- Body Segment 3 -->
+    <ellipse cx="300" cy="80" rx="18" ry="14" fill="url(#snakeGradient)" class="scale4"/>
+    <circle cx="290" cy="75" r="2" fill="#A855F7" class="pulsing"/>
+    <circle cx="310" cy="75" r="2" fill="#A855F7" class="pulsing"/>
+    
+    <!-- Body Segment 4 -->
+    <ellipse cx="350" cy="65" rx="16" ry="12" fill="url(#snakeGradient)" class="scale5"/>
+    <circle cx="340" cy="60" r="2" fill="#EC4899" class="pulsing"/>
+    <circle cx="360" cy="60" r="2" fill="#EC4899" class="pulsing"/>
+    
+    <!-- Tail -->
+    <ellipse cx="400" cy="70" rx="12" ry="10" fill="url(#snakeGradient)"/>
+    <path d="M395 75 Q400 85 405 75" stroke="#EC4899" stroke-width="1.5" fill="none"/>
+  </g>
+  
+  <!-- Code Blocks Following Snake -->
+  <g class="snake-body">
+    <rect x="450" y="30" width="60" height="6" rx="3" fill="#3B82F6" class="glowing"/>
+    <rect x="520" y="40" width="50" height="6" rx="3" fill="#8B5CF6" class="glowing"/>
+    <rect x="580" y="25" width="70" height="6" rx="3" fill="#10B981" class="glowing"/>
+    <rect x="660" y="45" width="55" height="6" rx="3" fill="#A855F7" class="glowing"/>
+    <rect x="730" y="35" width="65" height="6" rx="3" fill="#EC4899" class="glowing"/>
+    <rect x="800" y="50" width="60" height="6" rx="3" fill="#F59E0B" class="glowing"/>
+  </g>
+  
+  <!-- Floating Code Elements -->
+  <text x="100" y="120" fill="#6B7280" font-family="monospace" font-size="14" font-weight="bold" class="glowing">const snake = {</text>
+  <text x="120" y="140" fill="#3B82F6" font-family="monospace" font-size="12" class="pulsing">  language: 'JavaScript',</text>
+  <text x="120" y="155" fill="#8B5CF6" font-family="monospace" font-size="12" class="pulsing">  framework: 'React',</text>
+  <text x="120" y="170" fill="#10B981" font-family="monospace" font-size="12" class="glowing">  database: 'PostgreSQL'</text>
+  <text x="100" y="190" fill="#6B7280" font-family="monospace" font-size="14" font-weight="bold" class="glowing">};</text>
+  
+  <!-- Decorative Elements -->
+  <circle cx="50" cy="200" r="3" fill="#3B82F6" class="pulsing"/>
+  <circle cx="850" cy="50" r="4" fill="#EC4899" class="pulsing"/>
+  <path d="M150 100 Q200 80 250 100" stroke="url(#snakeGradient)" stroke-width="2" fill="none" opacity="0.3"/>
+  <path d="M400 100 Q450 120 550 100" stroke="url(#snakeGradient)" stroke-width="2" fill="none" opacity="0.3"/>
+  
+  <!-- Title -->
+  <text x="450" y="230" text-anchor="middle" fill="#6B7280" font-family="monospace" font-size="16" font-weight="bold" class="glowing">🐍 Pythonic Coding Journey</text>
+</svg>
