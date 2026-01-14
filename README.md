@@ -79,17 +79,22 @@ I'm a passionate **Full-Stack Developer** and **AI Engineer** with expertise in 
 
 ## 📊 GitHub Analytics
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=syed-mujtaba-stack&show_icons=true&theme=radical&hide_border=true)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=syed-mujtaba-stack&show_icons=true&theme=radical&hide_border=true" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=syed-mujtaba-stack&layout=compact&theme=radical&hide_border=true" alt="Top Languages" />
+</p>
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=syed-mujtaba-stack&layout=compact&theme=radical&hide_border=true)
-
-![GitHub Streak](https://streak-stats.demolab.com/?user=syed-mujtaba-stack&theme=radical&hide_border=true)
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=syed-mujtaba-stack&theme=radical&hide_border=true" alt="GitHub Streak" />
+</p>
 
 ---
 
 ## 🏆 Achievements & Badges
 
-![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=syed-mujtaba-stack&theme=radical&no-frame=true&no-bg=true&margin-w=4)
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=syed-mujtaba-stack&theme=radical&no-frame=true&no-bg=true&margin-w=4" alt="GitHub Trophies" />
+</p>
 
 ---
 
@@ -108,7 +113,9 @@ I'm a passionate **Full-Stack Developer** and **AI Engineer** with expertise in 
 
 ## 📈 Activity Graph
 
-![Activity Graph](https://github-readme-activity-graph.cyclic.app/graph?username=syed-mujtaba-stack&theme=react-dark)
+<p align="center">
+  <img src="https://github-readme-activity-graph.cyclic.app/graph?username=syed-mujtaba-stack&theme=react-dark" alt="Activity Graph" />
+</p>
 
 ---
 
