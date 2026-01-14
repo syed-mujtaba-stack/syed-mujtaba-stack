@@ -695,3 +695,32 @@ print(suggestion)
 AI-powered code assistance! 🤖
 
 ---
+
+
+<!-- 🤖 Auto-Updated on 2026-01-14 12:26:31 -->
+## 💡 Provide development insights
+
+# Docker Multi-Stage Optimization
+
+```dockerfile
+# Build stage
+FROM node:18-alpine AS builder
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci --only=production && npm cache clean --force
+
+# Production stage
+FROM node:18-alpine AS production
+RUN addgroup -g 1001 -S nodejs
+RUN adduser -S nextjs -u 1001
+WORKDIR /app
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/package*.json ./
+USER nextjs
+EXPOSE 3000
+CMD ["node", "server.js"]
+```
+
+Secure and optimized Docker images! 🐳
+
+---
