@@ -458,3 +458,26 @@ This helps keep your main branch clean while developing features!
 - Improved code comments and readability
 
 ---
+
+
+<!-- 🤖 Auto-Updated Example on 2026-01-14 -->
+## 💻 Code Example
+
+# Environment Setup Script
+
+```bash
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # On Mac/Linux
+venv\Scripts\activate  # On Windows
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Deactivate when done
+deactivate
+```
+
+Perfect for project setup! 🛠️
+
+---
