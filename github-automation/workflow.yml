@@ -1,0 +1,31 @@
+name: Daily GitHub Contribution
+on:
+  schedule:
+    # Run daily at 2:00 PM UTC (8:00 AM PST)
+    - cron: '0 14 * * *'
+  workflow_dispatch:
+    inputs:
+      commit_type:
+        description: 'Type of commit to make'
+        required: true
+        default: 'general'
+        type: choice
+        options:
+          - tutorial
+          - docs
+          - example
+          - fix
+          - general
+
+jobs:
+  contribute:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run GitHub Automation
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO_OWNER: ${{ github.repository_owner }}
+          REPO_NAME: ${{ github.event.repository.name }}
+          COMMIT_TYPE: ${{ github.event.inputs.commit_type || 'general' }}
+        run: |
+          python github-automation/setup.py "$GITHUB_TOKEN" "$REPO_OWNER" "$REPO_NAME" "$COMMIT_TYPE"

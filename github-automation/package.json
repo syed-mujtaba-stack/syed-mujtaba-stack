@@ -1,0 +1,27 @@
+{
+  "name": "github-contribution-automation",
+  "version": "1.0.0",
+  "description": "Automated GitHub contribution system for maintaining meaningful daily activity",
+  "main": "setup.py",
+  "scripts": {
+    "start": "python setup.py",
+    "install": "chmod +x install.sh && ./install.sh",
+    "test": "python setup.py test_token test_repo tutorial"
+  },
+  "dependencies": {
+    "requests": "^2.28.0"
+  },
+  "keywords": [
+    "github",
+    "automation",
+    "contributions",
+    "python",
+    "devops"
+  ],
+  "author": "Syed Mujtaba Abbas",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/syed-mujtaba-stack/github-automation"
+  }
+}
