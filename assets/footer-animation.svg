@@ -1,0 +1,27 @@
+<svg width="400" height="60" viewBox="0 0 400 60" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+    @keyframes sparkle { 0%, 100% { opacity: 0; } 50% { opacity: 1; } }
+    @keyframes heartbeat { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }
+    .float { animation: float 3s ease-in-out infinite; }
+    .sparkle { animation: sparkle 2s ease-in-out infinite; }
+    .heart { animation: heartbeat 2s ease-in-out infinite; }
+    .sparkle1 { animation-delay: 0s; }
+    .sparkle2 { animation-delay: 0.5s; }
+    .sparkle3 { animation-delay: 1s; }
+    .sparkle4 { animation-delay: 1.5s; }
+  </style>
+  <defs>
+    <linearGradient id="footerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EC4899;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <path d="M50 30 Q100 10 200 30 T350 30" stroke="url(#footerGradient)" stroke-width="3" fill="none" class="float"/>
+  <circle cx="80" cy="25" r="2" fill="#3B82F6" class="sparkle sparkle1"/>
+  <circle cx="150" cy="20" r="2" fill="#8B5CF6" class="sparkle sparkle2"/>
+  <circle cx="250" cy="25" r="2" fill="#EC4899" class="sparkle sparkle3"/>
+  <circle cx="320" cy="20" r="2" fill="#3B82F6" class="sparkle sparkle4"/>
+  <text x="200" y="50" text-anchor="middle" fill="#EF4444" font-size="20" class="heart">❤️</text>
+</svg>

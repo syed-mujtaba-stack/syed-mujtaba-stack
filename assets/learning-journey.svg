@@ -1,0 +1,39 @@
+<svg width="800" height="150" viewBox="0 0 800 150" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes pathDraw { 0% { stroke-dashoffset: 1000; } 100% { stroke-dashoffset: 0; } }
+    @keyframes nodePulse { 0%, 100% { transform: scale(1); opacity: 0.8; } 50% { transform: scale(1.2); opacity: 1; } }
+    .learning-path { stroke-dasharray: 1000; animation: pathDraw 3s ease-in-out forwards; }
+    .learning-node { animation: nodePulse 2s ease-in-out infinite; }
+    .node1 { animation-delay: 0.5s; }
+    .node2 { animation-delay: 1s; }
+    .node3 { animation-delay: 1.5s; }
+    .node4 { animation-delay: 2s; }
+  </style>
+  <defs>
+    <linearGradient id="pathGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EC4899;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Learning Path -->
+  <path d="M100 75 Q200 50 300 75 T500 75 Q600 50 700 75" stroke="url(#pathGradient)" stroke-width="3" fill="none" class="learning-path"/>
+  
+  <!-- Learning Nodes -->
+  <circle cx="100" cy="75" r="15" fill="#3B82F6" class="learning-node node1"/>
+  <text x="100" y="80" text-anchor="middle" fill="white" font-family="Arial" font-size="12">JS</text>
+  <text x="100" y="105" text-anchor="middle" fill="#6B7280" font-family="monospace" font-size="10">JavaScript</text>
+  
+  <circle cx="300" cy="75" r="15" fill="#8B5CF6" class="learning-node node2"/>
+  <text x="300" y="80" text-anchor="middle" fill="white" font-family="Arial" font-size="12">RE</text>
+  <text x="300" y="105" text-anchor="middle" fill="#6B7280" font-family="monospace" font-size="10">React</text>
+  
+  <circle cx="500" cy="75" r="15" fill="#EC4899" class="learning-node node3"/>
+  <text x="500" y="80" text-anchor="middle" fill="white" font-family="Arial" font-size="12">AI</text>
+  <text x="500" y="105" text-anchor="middle" fill="#6B7280" font-family="monospace" font-size="10">Artificial Intelligence</text>
+  
+  <circle cx="700" cy="75" r="15" fill="#F59E0B" class="learning-node node4"/>
+  <text x="700" y="80" text-anchor="middle" fill="white" font-family="Arial" font-size="12">ML</text>
+  <text x="700" y="105" text-anchor="middle" fill="#6B7280" font-family="monospace" font-size="10">Machine Learning</text>
+</svg>

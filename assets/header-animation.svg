@@ -1,0 +1,16 @@
+<svg width="800" height="100" viewBox="0 0 800 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes fadeIn { 0% { opacity: 0; transform: translateY(20px); } 100% { opacity: 1; transform: translateY(0); } }
+    @keyframes typewriter { 0% { width: 0; } 100% { width: 100%; } }
+    @keyframes blink { 0%, 50% { opacity: 1; } 51%, 100% { opacity: 0; } }
+    .text-line { animation: fadeIn 1s ease-out forwards; }
+    .line1 { animation-delay: 0.5s; }
+    .line2 { animation-delay: 1.5s; }
+    .line3 { animation-delay: 2.5s; }
+    .cursor { animation: blink 1s infinite; }
+  </style>
+  <text x="400" y="30" text-anchor="middle" fill="#3B82F6" font-family="Fira Code, monospace" font-size="24" font-weight="600" class="text-line line1">Hi there! 👋</text>
+  <text x="400" y="55" text-anchor="middle" fill="#3B82F6" font-family="Fira Code, monospace" font-size="28" font-weight="600" class="text-line line2">I'm Syed Mujtaba Abbas</text>
+  <text x="400" y="80" text-anchor="middle" fill="#3B82F6" font-family="Fira Code, monospace" font-size="22" font-weight="600" class="text-line line3">Full-Stack Developer &amp; AI Engineer</text>
+  <text x="720" y="80" fill="#3B82F6" font-family="Fira Code, monospace" font-size="22" class="cursor">|</text>
+</svg>

@@ -1,0 +1,35 @@
+<svg width="800" height="100" viewBox="0 0 800 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes badgeSpin { 0% { transform: rotateY(0deg); } 100% { transform: rotateY(360deg); } }
+    @keyframes shine { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
+    .badge { animation: badgeSpin 8s linear infinite; }
+    .badge1 { animation-delay: 0s; }
+    .badge2 { animation-delay: 2s; }
+    .badge3 { animation-delay: 4s; }
+    .badge4 { animation-delay: 6s; }
+    .shine { animation: shine 3s ease-in-out infinite; }
+  </style>
+  <defs>
+    <linearGradient id="badgeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFA500;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF8C00;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Badge 1 -->
+  <circle cx="100" cy="50" r="25" fill="url(#badgeGradient)" class="badge badge1"/>
+  <text x="100" y="55" text-anchor="middle" fill="white" font-family="Arial" font-size="20" font-weight="bold">AWS</text>
+  
+  <!-- Badge 2 -->
+  <circle cx="300" cy="50" r="25" fill="url(#badgeGradient)" class="badge badge2"/>
+  <text x="300" y="55" text-anchor="middle" fill="white" font-family="Arial" font-size="20" font-weight="bold">AI</text>
+  
+  <!-- Badge 3 -->
+  <circle cx="500" cy="50" r="25" fill="url(#badgeGradient)" class="badge badge3"/>
+  <text x="500" y="55" text-anchor="middle" fill="white" font-family="Arial" font-size="20" font-weight="bold">ML</text>
+  
+  <!-- Badge 4 -->
+  <circle cx="700" cy="50" r="25" fill="url(#badgeGradient)" class="badge badge4"/>
+  <text x="700" y="55" text-anchor="middle" fill="white" font-family="Arial" font-size="20" font-weight="bold">OSS</text>
+</svg>

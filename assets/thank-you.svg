@@ -1,0 +1,25 @@
+<svg width="600" height="80" viewBox="0 0 600 80" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes thankYou { 0% { opacity: 0; transform: scale(0.5); } 50% { opacity: 1; transform: scale(1.1); } 100% { opacity: 1; transform: scale(1); } }
+    @keyframes starBurst { 0% { transform: rotate(0deg) scale(0); opacity: 0; } 50% { transform: rotate(180deg) scale(1.2); opacity: 1; } 100% { transform: rotate(360deg) scale(1); opacity: 0.8; } }
+    .thank-text { animation: thankYou 2s ease-out forwards; }
+    .star { animation: starBurst 3s ease-out infinite; }
+    .star1 { animation-delay: 0s; }
+    .star2 { animation-delay: 0.5s; }
+    .star3 { animation-delay: 1s; }
+  </style>
+  <defs>
+    <linearGradient id="footerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EC4899;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <text x="300" y="40" text-anchor="middle" fill="url(#footerGradient)" font-family="Fira Code, monospace" font-size="24" font-weight="600" class="thank-text">Thanks for visiting! 🚀</text>
+  <text x="300" y="65" text-anchor="middle" fill="#6B7280" font-family="monospace" font-size="14" class="thank-text">Let's build something amazing together</text>
+  
+  <!-- Decorative Stars -->
+  <path d="M100 20 L102 26 L108 26 L103 30 L105 36 L100 32 L95 36 L97 30 L92 26 L98 26 Z" fill="#FFD700" class="star star1"/>
+  <path d="M500 20 L502 26 L508 26 L503 30 L505 36 L500 32 L495 36 L497 30 L492 26 L498 26 Z" fill="#FFD700" class="star star2"/>
+  <path d="M300 10 L301 13 L304 13 L301.5 15 L302.5 18 L300 16 L297.5 18 L298.5 15 L296 13 L299 13 Z" fill="#FFD700" class="star star3"/>
+</svg>
