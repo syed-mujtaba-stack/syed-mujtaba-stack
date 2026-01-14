@@ -724,3 +724,45 @@ CMD ["node", "server.js"]
 Secure and optimized Docker images! 🐳
 
 ---
+
+
+<!-- 🤖 Auto-Updated on 2026-01-14 12:29:18 -->
+## 🔮 Demonstrate AI capabilities
+
+# LangChain Agent Setup
+
+```python
+from langchain.agents import initialize_agent, Tool
+from langchain.llms import OpenAI
+from langchain.memory import ConversationBufferMemory
+
+# Initialize LLM
+llm = OpenAI(temperature=0)
+
+# Define tools
+tools = [
+    Tool(
+        name="Calculator",
+        func=lambda x: eval(x),
+        description="Useful for mathematical calculations"
+    ),
+    Tool(
+        name="Search",
+        func=lambda x: f"Searching for {x}",
+        description="Useful for finding information"
+    )
+]
+
+# Initialize agent
+memory = ConversationBufferMemory(memory_key="chat_history")
+agent = initialize_agent(
+    tools, llm, agent="conversational-react-description", memory=memory
+)
+
+# Use agent
+response = agent.run("What is 2 + 2 and then search for Python tutorials?")
+```
+
+Building intelligent agents! 🧠
+
+---
