@@ -662,3 +662,36 @@ Clean and reusable! ♻️
 - Improved code comments and readability
 
 ---
+
+
+<!-- 🤖 Auto-Updated on 2026-01-14 12:25:30 -->
+## 🧠 Share machine learning insights
+
+# OpenAI API Integration
+
+```python
+import openai
+from typing import List
+
+openai.api_key = 'your-api-key'
+
+def generate_code_suggestions(prompt: str) -> str:
+    response = openai.ChatCompletion.create(
+        model="gpt-4",
+        messages=[
+            {"role": "system", "content": "You are a helpful coding assistant."},
+            {"role": "user", "content": prompt}
+        ],
+        max_tokens=500,
+        temperature=0.7
+    )
+    return response.choices[0].message.content
+
+# Usage
+suggestion = generate_code_suggestions("How to optimize this Python function?")
+print(suggestion)
+```
+
+AI-powered code assistance! 🤖
+
+---
