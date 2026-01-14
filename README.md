@@ -540,3 +540,23 @@ deactivate
 Perfect for project setup! 🛠️
 
 ---
+
+
+<!-- 🤖 Auto-Updated Tutorial on 2026-01-14 -->
+## 📚 Daily Tutorial
+
+# CSS Flexbox Centering
+
+```css
+/* Center any element perfectly */
+.center-perfect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+```
+
+Works for any element type! 🎯
+
+---
