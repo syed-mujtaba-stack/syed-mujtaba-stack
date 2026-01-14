@@ -249,3 +249,28 @@ Clean, readable, and Pythonic! 🐍
 - Improved code comments and readability
 
 ---
+
+
+<!-- 🤖 Auto-Updated Example on 2026-01-14 -->
+## 💻 Code Example
+
+# Docker Multi-Stage Build
+
+```dockerfile
+# Multi-stage build for smaller images
+FROM node:18-alpine AS builder
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci --only=production
+
+FROM node:18-alpine AS runtime
+WORKDIR /app
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/build ./
+EXPOSE 3000
+CMD ["node", "server.js"]
+```
+
+Optimized for production! 🐳
+
+---
