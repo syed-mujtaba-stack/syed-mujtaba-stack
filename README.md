@@ -825,3 +825,40 @@ print(suggestion)
 AI-powered code assistance! 🤖
 
 ---
+
+
+<!-- 🤖 Auto-Updated on 2026-01-15 19:15:18 -->
+## 📚 Add advanced programming tutorial
+
+# React Hooks Best Practices
+
+```jsx
+// Custom hook for API calls
+const useApi = (url) => {
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  
+  useEffect(() => {
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        setData(data);
+        setLoading(false);
+      });
+  }, [url]);
+  
+  return { data, loading };
+};
+
+// Use in component
+const UserProfile = ({ userId }) => {
+  const { data: user, loading } = useApi(`/api/users/${userId}`);
+  
+  if (loading) return <div>Loading...</div>;
+  return <div>{user.name}</div>;
+};
+```
+
+Clean and reusable React patterns! ♻️
+
+---
