@@ -862,3 +862,36 @@ const UserProfile = ({ userId }) => {
 Clean and reusable React patterns! ♻️
 
 ---
+
+
+<!-- 🤖 Auto-Updated on 2026-01-16 07:33:44 -->
+## 🤖 Add AI integration example
+
+# OpenAI API Integration
+
+```python
+import openai
+from typing import List
+
+openai.api_key = 'your-api-key'
+
+def generate_code_suggestions(prompt: str) -> str:
+    response = openai.ChatCompletion.create(
+        model="gpt-4",
+        messages=[
+            {"role": "system", "content": "You are a helpful coding assistant."},
+            {"role": "user", "content": prompt}
+        ],
+        max_tokens=500,
+        temperature=0.7
+    )
+    return response.choices[0].message.content
+
+# Usage
+suggestion = generate_code_suggestions("How to optimize this Python function?")
+print(suggestion)
+```
+
+AI-powered code assistance! 🤖
+
+---
