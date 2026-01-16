@@ -964,3 +964,29 @@ func main() {
 Efficient concurrency with Goroutines! 🐹
 
 ---
+
+
+<!-- 🤖 Auto-Updated on 2026-01-16 07:42:49 -->
+## 📚 Add advanced programming tutorial
+
+# TypeScript Advanced Types
+
+```typescript
+// Utility types for better type safety
+type Partial<T> = { [P in keyof T]?: T[P] };
+type Required<T> = { [P in keyof T]-?: T[P] };
+type Readonly<T> = { readonly [P in keyof T]: T[P] };
+
+// Conditional types
+type NonNullable<T> = T extends null | undefined ? never : T;
+type Extract<T, U> = T extends U ? T : never;
+type Exclude<T, U> = T extends U ? never : T;
+
+// Template literal types
+type EventName<T extends string> = `on${Capitalize<T>}`;
+type ClickEvent = EventName<'click'>; // 'onClick'
+```
+
+Advanced TypeScript for type-safe applications! 🛡️
+
+---
