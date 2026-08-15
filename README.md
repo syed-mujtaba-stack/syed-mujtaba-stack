@@ -6,6 +6,14 @@
   <img alt="Syed Mujtaba Abbas — Full-Stack & Agentic AI Developer" src="dark.svg" width="100%">
 </picture>
 
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com/?lines=Full-Stack+Developer;Agentic+AI+Developer;DevOps+%26+Automation;Prompt+%26+Context+Engineer&font=Fira+Code&center=true&width=680&height=55&duration=2200&pause=800&color=22D3EE&background=0A101F&vCenter=true&size=21">
+    <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com/?lines=Full-Stack+Developer;Agentic+AI+Developer;DevOps+%26+Automation;Prompt+%26+Context+Engineer&font=Fira+Code&center=true&width=680&height=55&duration=2200&pause=800&color=0891B2&background=F4F6FB&vCenter=true&size=21">
+    <img alt="Role typing" src="https://readme-typing-svg.demolab.com/?lines=Full-Stack+Developer;Agentic+AI+Developer&font=Fira+Code&center=true&width=680&height=55&duration=2200&pause=800&color=22D3EE&background=0A101F&vCenter=true&size=21">
+  </picture>
+</div>
+
 ---
 
 ## 🚀 About Me
@@ -16,6 +24,14 @@
 - 🎓 Bachelors in **Computer Science & Software Engineering**
 - 🌱 Currently: **Building + Learning + Shipping**
 - ⚙️ ToolChain: **VS Code · Git · Android Studio · Figma · Vercel · Netlify**
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="divider-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="divider-light.svg">
+    <img alt="" src="divider-dark.svg" width="90%">
+  </picture>
+</div>
 
 ## 🛠️ Languages & Tools
 
@@ -48,6 +64,14 @@
   <img src="https://img.shields.io/badge/Android%20Studio-3DDC84?style=for-the-badge&logo=androidstudio&logoColor=000000" />
 </p>
 
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="divider-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="divider-light.svg">
+    <img alt="" src="divider-dark.svg" width="90%">
+  </picture>
+</div>
+
 ## 📊 GitHub Stats
 
 <p align="center">
@@ -59,6 +83,18 @@
   <img src="https://streak-stats.demolab.com/?user=syed-mujtaba-stack&hide_border=true&background=0A101F&stroke=22D3EE&ring=10B981&fire=10B981&currStreakNum=CBD5E1&sideNums=CBD5E1&currStreakLabel=22D3EE&sideLabels=22D3EE&dates=64748B" alt="GitHub Streak" width="100%" />
 </p>
 
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=syed-mujtaba-stack&bg_color=0A101F&color=22D3EE&line=10B981&point=A78BFA&area=true&hide_border=true&radius=8" alt="Activity Graph" width="100%" />
+</p>
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="divider-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="divider-light.svg">
+    <img alt="" src="divider-dark.svg" width="90%">
+  </picture>
+</div>
+
 ## 🐍 Contribution Snake
 
 <picture>
@@ -66,6 +102,14 @@
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/syed-mujtaba-stack/syed-mujtaba-stack/output/github-contribution-grid-snake.svg">
   <img alt="Contribution Snake" src="https://raw.githubusercontent.com/syed-mujtaba-stack/syed-mujtaba-stack/output/github-contribution-grid-snake-dark.svg" width="100%">
 </picture>
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="divider-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="divider-light.svg">
+    <img alt="" src="divider-dark.svg" width="90%">
+  </picture>
+</div>
 
 ## 🌐 Connect With Me
 
@@ -85,4 +129,8 @@
   <a href="https://mujtaba-abbas.web.app/">
     <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white" alt="Portfolio" />
   </a>
+</p>
+
+<p align="center">
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=syed-mujtaba-stack.syed-mujtaba-stack" alt="Visitors" />
 </p>

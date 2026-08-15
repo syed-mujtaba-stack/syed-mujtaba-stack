@@ -23,12 +23,22 @@ All automated work is done. These are the remaining manual steps (need your acco
   and `...-dark.svg`. The README snake section will then render.
 
 ## 5. Self-hosted stats (see `docs/stats.md` for full detail)
+> ⚠️ **The public stats instance (`github-readme-stats.vercel.app`) is currently
+> rate-limited (HTTP 503)** — the two stat cards will show error images until you
+> self-host. Everything else (typing, streak, activity graph, snake, badges) works
+> without this step.
 1. GitHub → Developer settings → PAT (classic) → scope `repo`, **no expiration**.
 2. Fork `anuraghazra/github-readme-stats` → deploy on Vercel → env var `PAT_1` = token.
+   - On this machine, run `vercel login` once (the CLI is installed but the token is invalid).
 3. Copy your Vercel URL into `README.md` — it appears in the 2 stat-card links
    (replace `github-readme-stats.vercel.app`).
 4. Optional: deploy `DenverCoder1/github-readme-streak-stats` for a reliable streak card.
    If you skip it, remove the streak `<img>` from the README.
+
+## 5b. Notes on what was skipped
+- **GitHub Trophy** was left out: the main `github-profile-trophy.vercel.app` endpoint is
+  currently rate-limited (HTTP 402) and would render a broken image; it's also sparse for
+  new accounts. Re-add it later (or self-host) once the account has more activity.
 
 ## 6. Portfolio link
 - When your portfolio goes live, add a badge/URL to the Connect section and update the
