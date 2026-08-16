@@ -70,8 +70,12 @@ def dither_serpentine(arr: np.ndarray) -> np.ndarray:
     return ink
 
 
-def subject_mask(rgb: Image.Image, erode: int = 2) -> np.ndarray:
-    """Segment the lit subject from a flat background. Returns True on the subject."""
+def subject_mask(rgb: Image.Image, erode: int = 2, thr_scale: float = 0.6) -> np.ndarray:
+    """Segment the lit subject from a flat background. Returns True on the subject.
+
+    thr_scale relaxes the Otsu distance threshold (< 1 keeps dim subject parts like
+    dark hair that sit close to a dark background).
+    """
     a = np.asarray(rgb, dtype=np.float64)
     h, w = a.shape[:2]
     m = min(h, w)
@@ -104,7 +108,7 @@ def subject_mask(rgb: Image.Image, erode: int = 2) -> np.ndarray:
             best_v, best_t = v, t
     thr = edges[best_t]
 
-    subject = dist >= thr
+    subject = dist >= thr * thr_scale
     subject = ndimage.binary_closing(subject, structure=np.ones((5, 5)))
     subject = ndimage.binary_fill_holes(subject)
     lab, n = ndimage.label(subject)

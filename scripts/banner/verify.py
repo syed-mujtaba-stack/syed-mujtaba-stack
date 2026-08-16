@@ -50,7 +50,7 @@ def main(photo="assets/photo/placeholder.jpg"):
     for mode in ("dark", "light"):
         svg = open(f"{root}{mode}.svg", encoding="utf-8").read()
         pal = build.PALETTE[mode]
-        runs, st = portrait.build_dots(photo, mode)
+        runs, st = portrait.build_dots(photo, mode, crop=build.CROP)
         print(f"--- {mode}.svg ---")
         print(f"  size {len(svg)/1024:.0f} KB | dots {st['dots']} | runs {len(runs)}")
 

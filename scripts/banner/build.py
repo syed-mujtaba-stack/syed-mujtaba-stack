@@ -6,7 +6,7 @@ import os
 
 import numpy as np
 
-from . import anim, portrait
+from . import anim, portrait, premium
 
 W, H = 1180, 610
 TITLE_H = 44
@@ -14,6 +14,7 @@ TITLE_H = 44
 GRID_W, GRID_H = 300, 340
 S = (424 - 2 * 16) / GRID_W          # grid -> banner px scale (~1.31)
 PXO, PYO = 32, 94                    # portrait dot origin
+CROP = (0.0, 0.08, 1.0, 0.58)        # photo region (fractions): head-and-shoulders, skips dark top / bright bottom
 
 # panels
 PORT_X, PORT_W = 24, 424
@@ -39,6 +40,7 @@ PALETTE = {
         "text": "#E6E9F5", "dim": "#7986A8", "live": "#EF4444",
         "traffic": ["#FF5F57", "#FEBC2E", "#28C840"], "pilltext": "#05281F",
         "outline": "#1B2745",
+        "star": "#8B9BB8", "glow_op": 0.16, "scan": "#FFFFFF", "scan_op": 0.05,
     },
     "light": {
         "bg": "#F4F6FB", "panel": "#FFFFFF", "frame": "#D6DDF0",
@@ -46,6 +48,7 @@ PALETTE = {
         "text": "#101B33", "dim": "#5B6B8C", "live": "#DC2626",
         "traffic": ["#FF5F57", "#FEBC2E", "#28C840"], "pilltext": "#05281F",
         "outline": "#C7D0E8",
+        "star": "#5B6B8C", "glow_op": 0.10, "scan": "#0F1830", "scan_op": 0.05,
     },
 }
 
@@ -156,7 +159,7 @@ def build_banner(photo_path, mode, out_path, logo_dir="assets/logos"):
     pal = PALETTE[mode]
     font = "'Cascadia Code','JetBrains Mono','Fira Code',Consolas,ui-monospace,monospace"
 
-    runs, st = portrait.build_dots(photo_path, mode)
+    runs, st = portrait.build_dots(photo_path, mode, crop=CROP)
     run_xy = np.array([[x, y] for x, y, _ in runs], dtype=float)
 
     # ---- drift bands (loop layer) -----------------------------------
@@ -165,7 +168,7 @@ def build_banner(photo_path, mode, out_path, logo_dir="assets/logos"):
     kt, op = anim.portrait_keyframes()
     kt_str = _kt_str(kt)
     loop_groups = []
-    for b in range(N_BANDS):
+    for b in range(int(band.max()) + 1):
         sel = np.where(band == b)[0]
         sub = [runs[i] for i in sel]
         d = path_for_runs(sub)
@@ -211,8 +214,10 @@ def build_banner(photo_path, mode, out_path, logo_dir="assets/logos"):
                                           begin=anim.LOOP_BEGIN))
 
     # ---- chrome -------------------------------------------------------
+    live_cx = INFO_X + INFO_W - 228
     live_dot = (
-        f'<circle cx="{INFO_X + INFO_W - 228}" cy="90" r="4.5" fill="{pal["live"]}">'
+        f'{premium.live_ping(pal, live_cx, 90)}'
+        f'<circle cx="{live_cx}" cy="90" r="4.5" fill="{pal["live"]}">'
         f'<animate attributeName="opacity" values="1;0.2;1" keyTimes="0;0.5;1" dur="1.6s" repeatCount="indefinite"/>'
         f"</circle>"
     )
@@ -235,14 +240,16 @@ def build_banner(photo_path, mode, out_path, logo_dir="assets/logos"):
         f'{pill}'
     )
 
-    # portrait frame
+    # portrait frame (gradient stroke + soft glow behind)
     frame_x = PORT_X + 2
     frame_y = 80
     frame_w = GRID_W * S + 14
     frame_h = GRID_H * S + 14
+    glow_el = premium.glow(pal, PXO + GRID_W * S / 2, PYO + GRID_H * S / 2,
+                           GRID_W * S * 0.62, GRID_H * S * 0.56)
     frame = (
         f'<rect x="{frame_x}" y="{frame_y}" width="{frame_w:.0f}" height="{frame_h:.0f}" rx="10" '
-        f'fill="none" stroke="{pal["frame"]}" stroke-width="1.5"/>'
+        f'fill="{pal["panel"]}" fill-opacity="0.35" stroke="url(#gFrame)" stroke-width="1.5"/>'
     )
 
     rows_xml = []
@@ -264,15 +271,20 @@ def build_banner(photo_path, mode, out_path, logo_dir="assets/logos"):
 
     body = f"""
 <svg xmlns="http://www.w3.org/2000/svg" width="1180" height="610" viewBox="0 0 1180 610">
-<defs><style>.t{{font-family:{font}}}</style></defs>
+<defs><style>.t{{font-family:{font}}}</style>{premium.gradient_defs(pal)}</defs>
 <rect width="1180" height="610" rx="16" fill="{pal["bg"]}"/>
+{premium.starfield(pal)}
+{glow_el}
+{premium.scanline(pal)}
 {title}
 {headers}
 {frame}
 <g>{''.join(intro_groups)}</g>
 <g>{''.join(loop_groups)}</g>
 <g>{''.join(trav_els)}</g>
+{premium.accent_sparkle(pal)}
 {''.join(rows_xml)}
+{premium.status_bar(pal, font)}
 </svg>
 """
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
