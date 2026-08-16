@@ -25,6 +25,23 @@
 - 🌱 Currently: **Building + Learning + Shipping**
 - ⚙️ ToolChain: **VS Code · Git · Android Studio · Figma · Vercel · Netlify**
 
+## 🎯 Currently Working On
+
+> Building & shipping **agentic AI**, **full-stack products** and **automation** that solve real problems.
+
+- 🤖 **Agentic AI** — AI-powered WhatsApp agents, autonomous lead workflows, RAG pipelines
+- 🛍️ **E-commerce** — Next.js + Sanity storefronts (Norvia, KarachiGum.com)
+- 📈 **Automation** — scraper / lead-gen pipelines with real-time integrations
+- 🚀 **Shipping** — SaaS ideas, hackathons and open-source experiments
+
+<details>
+  <summary><b>🧠 Now Learning</b></summary>
+  <p>
+  Agent orchestration (OpenAI Agents SDK · LangGraph) · RAG & embeddings · Kubernetes ·
+  System design · Clean architecture & testing · Advanced DevOps & Infrastructure-as-Code
+  </p>
+</details>
+
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="divider-dark.svg">
@@ -241,6 +258,28 @@
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=syed-mujtaba-stack&bg_color=0A101F&color=22D3EE&line=10B981&point=A78BFA&area=true&hide_border=true&radius=8" alt="Activity Graph" width="100%" />
 </p>
 
+## 🚀 Featured Projects
+
+<p align="center">
+  <img src="https://grs-steel.vercel.app/api/pin?username=syed-mujtaba-stack&repo=leadshunter&hide_border=true&bg_color=0A101F&title_color=22D3EE&icon_color=10B981&text_color=CBD5E1&border_color=1E293B" alt="Leadshunter" width="49%" />
+  <img src="https://grs-steel.vercel.app/api/pin?username=syed-mujtaba-stack&repo=KarachiGum.com&hide_border=true&bg_color=0A101F&title_color=22D3EE&icon_color=10B981&text_color=CBD5E1&border_color=1E293B" alt="KarachiGum.com" width="49%" />
+</p>
+
+<p align="center">
+  <img src="https://grs-steel.vercel.app/api/pin?username=syed-mujtaba-stack&repo=Norvia&hide_border=true&bg_color=0A101F&title_color=22D3EE&icon_color=10B981&text_color=CBD5E1&border_color=1E293B" alt="Norvia" width="49%" />
+  <img src="https://grs-steel.vercel.app/api/pin?username=syed-mujtaba-stack&repo=fujifenix-elevator&hide_border=true&bg_color=0A101F&title_color=22D3EE&icon_color=10B981&text_color=CBD5E1&border_color=1E293B" alt="Fuji Fenix Elevator" width="49%" />
+</p>
+
+<p align="center">
+  <img src="https://grs-steel.vercel.app/api/pin?username=syed-mujtaba-stack&repo=softwbot-ai&hide_border=true&bg_color=0A101F&title_color=22D3EE&icon_color=10B981&text_color=CBD5E1&border_color=1E293B" alt="SoftwBot AI" width="49%" />
+</p>
+
+## 💬 Random Dev Quote
+
+<p align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote" width="100%" />
+</p>
+
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="divider-dark.svg">
@@ -256,6 +295,22 @@
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/syed-mujtaba-stack/syed-mujtaba-stack/output/github-contribution-grid-snake.svg">
   <img alt="Contribution Snake" src="https://raw.githubusercontent.com/syed-mujtaba-stack/syed-mujtaba-stack/output/github-contribution-grid-snake-dark.svg" width="100%">
 </picture>
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="divider-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="divider-light.svg">
+    <img alt="" src="divider-dark.svg" width="90%">
+  </picture>
+</div>
+
+## ⚡ More About Me
+
+- 🔭 Exploring **Agentic AI**, **automation** and **DevOps**
+- 🌱 Always learning — new languages, frameworks and tools every week
+- 💬 Ask me about **Full-Stack development, AI agents, or automation**
+- 🧩 I love turning messy problems into clean, automated systems
+- ⚡ Fun fact: I automate the boring stuff so I can build cooler things
 
 <div align="center">
   <picture>
