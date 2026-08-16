@@ -145,7 +145,11 @@ def build_dots(photo_path: str, mode: str, gw: int = 300, gh: int = 340, crop=No
     arr = preprocess(gray)
     ink = dither_serpentine(arr)
     if mode == "light":
-        dots = ink
+        # paint dark parts on white unless the photo's background is dark
+        # (then paint the lit subject instead, so a dark-bg headshot reads)
+        mask = subject_mask(rgb)
+        border_dark = float(np.asarray(gray).mean()) < 115
+        dots = (~ink) & mask if border_dark else ink
     else:
         mask = subject_mask(rgb)
         dots = (~ink) & mask

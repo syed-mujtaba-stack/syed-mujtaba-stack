@@ -75,8 +75,8 @@
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=syed-mujtaba-stack&hide_rank=true&hide_border=true&bg_color=0A101F&title_color=22D3EE&icon_color=10B981&text_color=CBD5E1&border_color=1E293B" alt="GitHub Stats" width="49%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=syed-mujtaba-stack&layout=compact&hide_border=true&bg_color=0A101F&title_color=22D3EE&icon_color=10B981&text_color=CBD5E1&border_color=1E293B" alt="Top Languages" width="49%" />
+  <img src="https://grs-steel.vercel.app/api?username=syed-mujtaba-stack&hide_rank=true&hide_border=true&bg_color=0A101F&title_color=22D3EE&icon_color=10B981&text_color=CBD5E1&border_color=1E293B" alt="GitHub Stats" width="49%" />
+  <img src="https://grs-steel.vercel.app/api/top-langs?username=syed-mujtaba-stack&layout=compact&hide_border=true&bg_color=0A101F&title_color=22D3EE&icon_color=10B981&text_color=CBD5E1&border_color=1E293B" alt="Top Languages" width="49%" />
 </p>
 
 <p align="center">
