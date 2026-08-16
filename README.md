@@ -1,5 +1,7 @@
 # <b>Hi 👋, I'm Syed Mujtaba Abbas</b>
 
+<!-- Syed Mujtaba Abbas — Full-Stack Developer, Agentic AI Developer & DevOps Engineer based in Karachi, Pakistan. Builds AI agents, e-commerce platforms and automation with Next.js, TypeScript, Python and Cloud (AWS/Azure/GCP). -->
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="light.svg">
