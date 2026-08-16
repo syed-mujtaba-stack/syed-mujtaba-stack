@@ -14,7 +14,7 @@ TITLE_H = 44
 GRID_W, GRID_H = 300, 340
 S = (424 - 2 * 16) / GRID_W          # grid -> banner px scale (~1.31)
 PXO, PYO = 32, 94                    # portrait dot origin
-CROP = (0.0, 0.08, 1.0, 0.58)        # photo region (fractions): head-and-shoulders, skips dark top / bright bottom
+CROP = (0.28, 0.13, 0.62, 0.46)      # photo region (fractions): tight head-and-shoulders so the face reads
 
 # panels
 PORT_X, PORT_W = 24, 424
